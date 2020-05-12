@@ -1,0 +1,97 @@
+html {
+	height: 100%;
+}
+
+a :hover {
+ background:  rgb(208, 255, 0);
+}
+
+body {
+	display:flex;
+	flex-direction: column;
+	background-color: white;
+	min-height: 100%;
+}
+
+header {
+	font-family: 'Baloo Paaji 2', cursive;
+	color:  rgba(19, 142, 243, 0.884);
+}
+
+h1,h2,h3,h4,h5 {
+	font-family: 'Baloo Paaji 2', cursive;
+	font-weight: bold;
+}
+
+.nav-link {
+	font-family:'Baloo Paaji 2', cursive;
+	color: rgba(19, 142, 243, 0.884);
+	font-size: 30px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: rgba(19, 142, 243, 0.884);
+}
+
+.container {
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container h3 {
+	align-self: flex-start;
+}
+
+section.aboutMe {
+	display:flex;
+	justify-content: right;
+	align-items: center;
+	flex-direction: column;
+	flex: 1 0 auto;
+}
+
+section.aboutMe p {
+   font-family: 'Roboto', sans-serif;
+   font-size: medium;
+   font-weight: bold;
+}
+
+#container-1 {
+	padding:10px;
+	border: 1px #ccc solid;
+}
+
+#photo {
+	border: 4px #ccc solid
+}
+
+.contact {
+	margin-top: 45px;
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.listItem {
+	display:flex;
+	align-self: center;
+	flex-direction: column;
+	align-content: flex-end;
+	padding-top: 40px;
+}
+
+.listItemGit {
+	display:flex;
+	align-self: center;
+	flex-direction: column;
+	align-content: flex-end;
+}
+
+footer {
+	margin-top: auto;
+	text-align: center;
+	color:  rgba(19, 142, 243, 0.884);
+	font-size: 20px;	
+}
