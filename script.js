@@ -19,3 +19,10 @@ THEN I can save my initials and score
  // when questions or time runs out prompt for initials
  //let initials and score persist in memory
  
+
+ var generateBtn = document.querySelector("#quiz");
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", takeQuiz)
+
+var passwordText = document.querySelector("#quiz");

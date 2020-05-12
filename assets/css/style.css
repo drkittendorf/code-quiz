@@ -2,10 +2,6 @@ html {
 	height: 100%;
 }
 
-a :hover {
- background:  rgb(208, 255, 0);
-}
-
 body {
 	display:flex;
 	flex-direction: column;
@@ -39,55 +35,38 @@ h1,h2,h3,h4,h5 {
 	flex-direction: column;
 }
 
-.container h3 {
-	align-self: flex-start;
-}
-
-section.aboutMe {
-	display:flex;
-	justify-content: right;
-	align-items: center;
-	flex-direction: column;
-	flex: 1 0 auto;
-}
-
-section.aboutMe p {
-   font-family: 'Roboto', sans-serif;
-   font-size: medium;
-   font-weight: bold;
-}
-
-#container-1 {
-	padding:10px;
-	border: 1px #ccc solid;
-}
-
-#photo {
-	border: 4px #ccc solid
-}
-
-.contact {
-	margin-top: 45px;
-	display:flex;
-	align-items: center;
-	flex-direction: column;
-	padding: 20px;
-}
-
-.listItem {
-	display:flex;
+.card {
+	background-color:#343a40 ;
+	border-radius: 25px;
+	border-width: 5px;
+	border-color: orange;
+	color: white;
+	font-size: 18px;
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 30px 40px;
 	align-self: center;
-	flex-direction: column;
-	align-content: flex-end;
-	padding-top: 40px;
-}
-
-.listItemGit {
-	display:flex;
+  }
+ 
+  .card-body {
+	min-height: 200px;
 	align-self: center;
-	flex-direction: column;
-	align-content: flex-end;
-}
+  }
+
+.btn {
+	border-color: black;
+	border-width: 4px;
+	background-color: orange;
+	border-radius: 12px;
+	color: hsl(0, 0%, 100%);
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 22px;
+	margin: 16px 16px 16px 20px;
+	padding: 14px 34px;
+	text-align: center;
+	cursor: pointer;
+  }
 
 footer {
 	margin-top: auto;
