@@ -1,28 +1,34 @@
-/* GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
-*/
+let buttonQuiz = document.getElementById("quizBtn");
+buttonQuiz.addEventListener("click", respondClick);
+let timerQuiz = document.getElementById("countdown");
+let qpiLe1 = ["JavaScript was invented in 5 days. True or False?", "JavaScript is a cool language to learn. True or False?"]
 
+let question = document.getElementById("quesTions");
+    question.innerHTML = "Malesuada proin libero nunc consequat interdum varius. Tempus egestas sed sed risus pretium quam vulputate. Ultrices sagittis orci a scelerisque purus semper eget. In fermentum et sollicitudin ac orci.";
+    console.log("questions happen here")
 
- // generatebtn. call function
- //build a timer function that starts on click
- // questions will print to screen on click
- //compare submitted answer to actual answer if false -5 seconds, if true next question
- // when questions or time runs out prompt for initials
- //let initials and score persist in memory
- 
+function respondClick () {
+    console.log("clicked")
+    let timeLeft = 60;
+    questionsQuiz();
+    var timeInterval = setInterval(function() {
+        timerQuiz.textContent = timeLeft + " seconds remaining";
+        timeLeft--;
+    
+        if (timeLeft === 0) {
+          timerQuiz.textContent = "";
+          endQuiz();
+          clearInterval(timeInterval);
+        }
+    
+      }, 1000);
+}
 
- var generateBtn = document.querySelector("#quiz");
+function questionsQuiz () {
+    question.innerHTML = qpiLe1[0];
+    console.log("questions happen here");
+  }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", takeQuiz)
-
-var passwordText = document.querySelector("#quiz");
+function endQuiz () {
+  console.log("made it")
+}

@@ -49,10 +49,22 @@ h1,h2,h3,h4,h5 {
   }
  
   .card-body {
-	min-height: 200px;
+	min-height:200px;
 	align-self: center;
   }
 
+  .card-boy div {
+	min-height:100px;
+  }
+
+#quesTions {
+   padding: 15px;
+   margin: 16px;
+   border-color: orange;
+   border-width: 2px;
+   line-height: 22px;
+   text-align: center;
+}
 .btn {
 	border-color: black;
 	border-width: 4px;

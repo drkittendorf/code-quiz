@@ -25,11 +25,12 @@
                           <li class="nav-item">
                               <a class="nav-link" href="">Instructions</a>
                           </li>
+                          
                           <li class="nav-item">
-                              <a class="nav-link" href="">See High Scores</a>
+                              <h1 id="countdown">countdown</h1>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="">Timer</a>
+                             <a class="nav-link" href="">See High Scores</a>
                           </li>
                 </ul>
             </nav>
@@ -38,19 +39,21 @@
         <div class="container">
             <div class="wrapper">
                 
-                <header>
-                  <h1>Test your knowledge and compare your score!!!</h1>
-                  <br>
-                </header>
+              
                 <div class="card">
                     <div class="card-header">
-                    <h2>Click the button</h2>
-                    <button id="quizzin" class="btn">Let the Quizzin' get Beginnin'</button>
+                    <h2>Click the button ... Test your knowledge and compare your score!!!</h2>
+                    <button id="quizBtn" class="btn">Let the Quizzin' get Beginnin'</button>
                     </div>
+                
                     <div class="card-body">
-                    <textarea readonly id="quiz"
-                      placeholder="The Code Quiz"
-                      aria-label="Quiz Questions Here"></textarea>
+                        <textarea id="quesTions" rows="8" cols="60">
+                            
+                        
+                        
+                        </textarea>
+                   
+                                 
                     </div>
                 </div>
             
@@ -63,5 +66,6 @@
         </footer> 
   
 </body>
+<script src="script.js"></script>
 </html>
 
