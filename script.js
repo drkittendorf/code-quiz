@@ -1,67 +1,103 @@
+let timeLeft = 60;
 //Triggers start button
 let buttonQuiz = document.getElementById("quizBtn");
 buttonQuiz.addEventListener("click", respondClick);
 let timerQuiz = document.getElementById("countdown");
 //question and answer variables
-let qpiLe1 = ["JavaScript was invented in 5 days. True or False?", "JavaScript is a cool language to learn. True or False?", "HTML stand Hyper Text Made Up Language, True or False?", ]
-let apiLe1 = ["False", "True", "False"]
+const questArray = ["JavaScript was invented in 5 days. True or False?", "JavaScript is a cool language to learn. True or False?", "HTML stands for Hyper Text Made Up Language, True or False?", "Question", "another Question", "Yet another Question", "Last Question", "You answered all the questions!" ]
+const ansArray = ["False", "True", "False", "True", "False", "True", "False", "True"]
 let userAnswers = []
+let scoreCard = 0;
 
 let question = document.getElementById("quesTions");
 question.innerHTML = "Questions will appear here.";
-
-// function below is where questions will be triggered and looped through??
-function questionsQuiz () {
-  question.innerHTML = qpiLe1[0];  
- console.log("questions happen here");
-}
-
 let answerTrue = document.querySelector("#ansTrue");
-answerTrue.addEventListener("click", function() {
-userAnswers.push("True");
-//block more clicks
-//compare answers
-//subtract time on clock if necessary
-//load next question
-//reset button??
-});
-
 let answerFalse = document.querySelector("#ansFalse");
-answerFalse.addEventListener("click", function() {
-userAnswers.push("False");
-console.log(userAnswers)
-//compare answers
-//subtract time on clock if necessary
-//load next question
-});
 
+// function below (started by begin code quiz) sets time, starts countdown timer, triggers Question function and Quiz End
 
-
-// function below sets time, starts countdown timer, triggers Question function and Quiz End
 function respondClick () {
-console.log("clicked")
-    let timeLeft = 60;
-    questionsQuiz(); // calls questions for user to answer
-     //calls buttons for user to answer questions
-    var timeInterval = setInterval(function() {
-        timerQuiz.textContent = timeLeft + " seconds remaining";
-        timeLeft--;
-    
-        if (timeLeft === 0) {
-          timerQuiz.textContent = "";
-          endQuiz();
-          clearInterval(timeInterval);
-        }
-    
-      }, 1000);
+  buttonQuiz.disabled = "true"
+  console.log("clicked")  
+  questionsQuiz(); // calls questions for user to answer
+  var timeInterval = setInterval(function() {
+  timerQuiz.textContent = timeLeft + " seconds remaining";
+  timeLeft--; // this counts the time down
+    if (timeLeft <= 0) {
+    timerQuiz.textContent = "Out of Time!!!";
+    endQuiz();
+    clearInterval(timeInterval);
+    }
+  }, 1000);
 }
+let questNum = 0;
 
-// function below is where questions will be triggered and looped through??
 function questionsQuiz () {
-  question.innerHTML = qpiLe1[0];  
- console.log("questions happen here");
-}
+  event.preventDefault();
+  if (questArray[questNum] != undefined) { // check here
+  question.innerHTML = questArray[questNum];   
+  console.log("questions happening"); 
+    } else {
+  console.log("undefined")
+   endQuiz()
+  return
+  }
+}  
 
-function endQuiz () {
-  console.log("Times Up!!!")
-}
+// below establish function to be called after user select an answer
+answerTrue.addEventListener("click", function() {
+  event.preventDefault();
+  userAnswers.push("True");
+  answerTrue.disabled = true;//block clicks
+  answerFalse.disabled = true;
+  console.log(userAnswers, "user answer array");
+  
+  if (userAnswers[questNum]!==ansArray[questNum]) {  
+    console.log("answered incorrect")
+    timeLeft -=5;
+    answerTrue.disabled = false;//unblock clicks
+    answerFalse.disabled = false;
+    ++questNum
+  questionsQuiz ();
+     } else {
+    ++scoreCard;
+    console.log(scoreCard)
+    answerTrue.disabled = false;//unblock clicks
+    answerFalse.disabled = false;
+    console.log("answered correct");
+    ++questNum
+  questionsQuiz ();
+    } 
+})
+
+answerFalse.addEventListener("click", function() {
+  event.preventDefault();
+  userAnswers.push("False");
+  answerTrue.disabled = true;//block clicks
+  answerFalse.disabled = true;
+  console.log(userAnswers,"user answer array");
+  
+  if (userAnswers[questNum]!==ansArray[questNum]) { 
+    console.log("answered incorrect")
+    timeLeft -=5;
+    answerTrue.disabled = false;//unblock clicks
+    answerFalse.disabled = false;
+    ++questNum
+  questionsQuiz ();
+     } else {
+    ++scoreCard;
+    console.log(scoreCard)
+    answerTrue.disabled = false;//unblock clicks
+    answerFalse.disabled = false;
+    console.log("answered correct");
+    ++questNum
+  questionsQuiz ();
+    }   
+})        
+  
+  function endQuiz() {
+  console.log("Your Quiz has Ended!");
+  console.log(scoreCard);
+  prompt("Please enter your initials");
+  buttonQuiz.disabled = "false"
+  }
