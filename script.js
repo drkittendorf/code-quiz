@@ -8,10 +8,16 @@ const questArray = [
   "JavaScript was invented in 5 days. True or False?",
   "JavaScript is a cool language to learn. True or False?",
   "HTML stands for Hyper Text Made Up Language, True or False?",
-  "Question",
-  "another Question",
-  "Yet another Question",
-  "Last Question",
+  "LET is preferable to setting variables with VAR, True or False?",
+  "JQuery doesn't require a link to a script library, True or False?",
+  "Objects are very powerful parts of JavaScript, True or False?",
+  "The opposite of stringify is objectify, True or False?",
+  "The best way to learn coding is a mix of theory and practice, True or False?",
+  "Java and Javascript are fundamentally the same, True or False?",
+  "Bootstrap is frequently used to quickly style and format webpages, True or False?",
+  "It is best to avoid event.preventdefault when involving forms in your JavaScript, True or False?",
+  "JQuery is still used and you're likely to encounter it when working with web pages, True or False?",
+  "Function, Global, Block and Sniper are examples of scope in JavaScript, True or False?",
   "You answered all the questions!",
 ];
 const ansArray = [
@@ -23,6 +29,11 @@ const ansArray = [
   "True",
   "False",
   "True",
+  "False",
+  "True",
+  "False",
+  "True",
+  "False",
 ];
 let userAnswers = [];
 let scoreCard = 0;
@@ -118,7 +129,7 @@ function endQuiz() {
   console.log("Your Quiz has Ended!");
   console.log(scoreCard);
   let name = prompt("Please enter your initials");
-  localStorage.setItem("Name", name);
+  localStorage.setItem("Initials", name);
   localStorage.setItem("Score", scoreCard);
   console.log(localStorage);
   buttonQuiz.disabled = "false";

@@ -11,3 +11,4 @@ When an incorrect answer is selected 5 additional seconds are removed from the c
 After the questions are complete or the time runs out,
 the user is prompted to enter their initials and it is saved with their score.
 
+https://drkittendorf.github.io/04CodeQuiz/assets/images/Screenshot of Code Quiz.png
