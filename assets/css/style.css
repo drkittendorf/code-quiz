@@ -1,148 +1,152 @@
 html {
-	height: 100%;
+  height: 100%;
 }
 
 body {
-	display:flex;
-	flex-direction: column;
-	background-color: white;
-	min-height: 100%;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  min-height: 100%;
+  text-align: center;
 }
 
 header {
-	font-family: 'Baloo Paaji 2', cursive;
-	color:  rgba(19, 142, 243, 0.884);
+  font-family: "Baloo Paaji 2", cursive;
+  color: rgba(19, 142, 243, 0.884);
 }
 
-h1,h2,h3,h4,h5 {
-	font-family: 'Baloo Paaji 2', cursive;
-	font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Baloo Paaji 2", cursive;
+  font-weight: bold;
 }
 
 .nav-link {
-	font-family:'Baloo Paaji 2', cursive;
-	color: rgba(19, 142, 243, 0.884);
-	font-size: 30px;
+  font-family: "Baloo Paaji 2", cursive;
+  color: rgba(19, 142, 243, 0.884);
+  font-size: 30px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-	color: rgba(19, 142, 243, 0.884);
+  color: rgba(19, 142, 243, 0.884);
 }
 
 .container {
-	display:flex;
-	align-items: center;
-	flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .card {
-	background-color:#343a40 ;
-	border-radius: 25px;
-	border-width: 5px;
-	border-color: orange;
-	color: white;
-	font-size: 18px;
-	margin: 5px 10px;
-	max-width: 600px;
-	padding: 30px 40px;
-	align-self: center;
-  }
- 
-  .card-body {
-	display: inline-block;
-	min-height:200px;
-	align-self: center;
-  }
+  background-color: #343a40;
+  border-radius: 25px;
+  border-width: 5px;
+  border-color: orange;
+  color: white;
+  font-size: 18px;
+  margin: 5px 10px;
+  max-width: 600px;
+  padding: 30px 40px;
+  align-self: center;
+}
 
-  .card-body div {
-	min-height:100px;
-	align-self: center;
-  }
+.card-body {
+  display: inline-block;
+  min-height: 200px;
+  align-self: center;
+}
+
+.card-body div {
+  min-height: 100px;
+  align-self: center;
+}
 
 #quesTions {
-   padding: 15px;
-   margin: 16px;
-   border-color: orange;
-   border-width: 2px;
-   line-height: 22px;
-   text-align: center;
+  padding: 15px;
+  margin: 16px;
+  border-color: orange;
+  border-width: 2px;
+  line-height: 22px;
+  text-align: center;
 }
 
 .btn {
-	border-color: black;
-	border-width: 4px;
-	background-color: orange;
-	border-radius: 12px;
-	color: hsl(0, 0%, 100%);
-	font-weight: bold;
-	font-size: 25px;
-	line-height: 22px;
-	margin: 15px;
-	padding: 14px 14px;
-	text-align: center;
-	cursor: pointer;
+  border-color: black;
+  border-width: 4px;
+  background-color: orange;
+  border-radius: 12px;
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 22px;
+  margin: 15px;
+  padding: 14px 14px;
+  text-align: center;
+  cursor: pointer;
 }
 
 #box {
-	display:inline-block;
-	background-color:#343a40 ;
-	border-color: orange;
-	margin: auto;
-	max-width: 600px;
-	align-self: center;
-	text-align: center;
+  display: inline-block;
+  background-color: #343a40;
+  border-color: orange;
+  margin: auto;
+  max-width: 600px;
+  align-self: center;
+  text-align: center;
 }
 
-#ansTrue, #ansFalse {
-	display:inline-block;
-	border-color: black;
-	border-width: 6px;
-	background-color: orange;
-	border-radius: 12px;
-	color:black(0, 0%, 100%);
-	font-weight: bold;
-	font-size: 25px;
-	line-height: 44px;
-	margin: 20px;
-	padding: 10px 10px;
-	text-align: center;
-	align-self: center;
-	cursor: pointer
+#ansTrue,
+#ansFalse {
+  display: inline-block;
+  border-color: black;
+  border-width: 6px;
+  background-color: orange;
+  border-radius: 12px;
+  color: black(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 44px;
+  margin: 20px;
+  padding: 10px 10px;
+  text-align: center;
+  align-self: center;
+  cursor: pointer;
 }
 
 footer {
-	margin-top: auto;
-	text-align: center;
-	color:  rgba(19, 142, 243, 0.884);
-	font-size: 20px;	
+  margin-top: auto;
+  text-align: center;
+  color: rgba(19, 142, 243, 0.884);
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 650px) {
-	body {
-	  background-color: lightblue;
-	}
-	.card {
-		background-color:#343a40 ;
-		border-radius: 25px;
-		border-width: 5px;
-		border-color: orange;
-		color: white;
-		font-size: 16px;
-		margin: 10px auto;
-		max-width: 400px;
-		padding: 20px 30px;
-		align-self: center;
-	}
-	#quesTions {
-		padding: 15px;
-		margin: 10px;
-		border-color: orange;
-		border-width: 2px;
-		line-height: 20px;
-		text-align: center;
-		max-width: 200px;
-		align-self: center;
-	}
-
+  body {
+    background-color: lightblue;
+  }
+  .card {
+    background-color: #343a40;
+    border-radius: 25px;
+    border-width: 5px;
+    border-color: orange;
+    color: white;
+    font-size: 16px;
+    margin: 10px auto;
+    max-width: 400px;
+    padding: 20px 30px;
+    align-self: center;
+  }
+  #quesTions {
+    padding: 15px;
+    margin: 10px;
+    border-color: orange;
+    border-width: 2px;
+    line-height: 20px;
+    text-align: center;
+    max-width: 200px;
+    align-self: center;
+  }
 }
