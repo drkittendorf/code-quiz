@@ -65,8 +65,10 @@ Link to **GitHub Repo** used for application development - [Dale's Application G
 
 Here is a list of all the core technologies used to develop this application.
 
--
-
+- Javascript
+- Bootstrap
+- Google Fonts
+- setInterval function
 
 <br>
 
