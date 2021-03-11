@@ -24,7 +24,7 @@ Dale Kittendorf
 
 ## DESCRIPTION
 
-This website **showcases** a .
+This website **showcases** an application with a timer, as well as in page question and response mechanism.
 
 
 - When a user starts the app they will be presented with a button to Begin a Code Quiz.
