@@ -2,11 +2,11 @@
 
 ### TABLE OF CONTENTS
 
-- [CONTRIBUTOR(S)](#CONTRIBUTOR(S))
+- [CONTRIBUTOR(S)](#CONTRIBUTORS)
 - [DESCRIPTION](#DESCRIPTION)
 - [REFERENCE LINKS](#REFERENCE-LINKS)
-  - [Dale's Code Quiz Application :: Live Link](https://drkittendorf.github.io/04CodeQuiz/)
-  - [Dale's Code Quiz Application :: GitHub Repo](https://github.com/drkittendorf/04CodeQuiz/)
+  - [Dale's Code Quiz Application :: Live Link](https://drkittendorf.github.io/code-quiz/)
+  - [Dale's Code Quiz Application :: GitHub Repo](https://github.com/drkittendorf/code-quiz/)
 - [CONCEPT](#CONCEPT)
 - [LANGUAGES AND TOOLS](#LANGUAGES-AND-TOOLS)
 - [CORE PROJECT TECHNOLOGIES](#CORE-PROJECT-TECHNOLOGIES)
@@ -15,7 +15,7 @@
 - [SCREENSHOTS](#SCREENSHOTS-AND-VIDEO)
 
 ---
-## CONTRIBUTOR(S)
+## CONTRIBUTORS
 Dale Kittendorf
 
 <br>
@@ -41,9 +41,9 @@ the user is prompted to enter their initials and it is saved with their score.
 
 ## REFERENCE LINKS
 
-Link to **Dale's Code Quiz App** deployed on github - [Dale's Application Live Link](https://drkittendorf.github.io/04CodeQuiz/)
+Link to **Dale's Code Quiz App** deployed on github - [Dale's Application Live Link](https://drkittendorf.github.io/code-quiz/)
 
-Link to **GitHub Repo** used for application development - [Dale's Application GitHub Repo](https://github.com/drkittendorf/04CodeQuiz)
+Link to **GitHub Repo** used for application development - [Dale's Application GitHub Repo](https://github.com/drkittendorf/code-quiz)
 
 <br>
 
